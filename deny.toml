@@ -1,0 +1,44 @@
+# cargo-deny configuration for Source2Rust
+# https://embarkstudios.github.io/cargo-deny/
+#
+# Run: cargo deny check
+
+[graph]
+targets = [
+    { triple = "x86_64-pc-windows-msvc" },
+    { triple = "x86_64-unknown-linux-gnu" },
+]
+exclude-dev = true
+
+[advisories]
+unmaintained = "workspace"
+yanked = "warn"
+
+[licenses]
+allow = [
+    "MIT",
+    "Apache-2.0",
+    "Unicode-3.0",
+]
+confidence-threshold = 0.8
+
+# cbindgen is an MPL-2.0 build-time tool. Its code is not linked into the
+# Source2Rust binary.
+exceptions = [
+    { allow = ["MPL-2.0"], crate = "cbindgen" },
+]
+
+[bans]
+multiple-versions = "warn"
+wildcards = "allow"
+highlight = "all"
+
+deny = [
+    { crate = "openssl-sys" },
+]
+
+[sources]
+unknown-registry = "deny"
+unknown-git = "deny"
+allow-registry = ["https://github.com/rust-lang/crates.io-index"]
+allow-git = []

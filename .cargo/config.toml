@@ -1,0 +1,10 @@
+[alias]
+licenses = "about generate --output-file THIRD_PARTY_NOTICES.md about.hbs"
+xtask = "run --package xtask --"
+fmt-cpp = "run --package xtask -- fmt-cpp"
+
+[build]
+warnings = "deny"
+
+[target.x86_64-pc-windows-msvc]
+rustflags = ["-C", "target-feature=+crt-static"]

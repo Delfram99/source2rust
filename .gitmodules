@@ -1,0 +1,16 @@
+[submodule "external/hl2sdk-cs2"]
+	path = external/hl2sdk-cs2
+	url = https://github.com/alliedmodders/hl2sdk.git
+	branch = cs2
+[submodule "external/metamod-source"]
+	path = external/metamod-source
+	url = https://github.com/alliedmodders/metamod-source.git
+	branch = k/sourcehook_alternative
+[submodule "external/khook"]
+	path = external/khook
+	url = https://github.com/Kenzzer/KHook.git
+	branch = master
+[submodule "external/hl2sdk-manifests"]
+	path = external/hl2sdk-manifests
+	url = https://github.com/alliedmodders/hl2sdk-manifests.git
+	branch = master

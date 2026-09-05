@@ -1,0 +1,26 @@
+{
+  "sdk": "cs2",
+  "cxx_standard": "c++20",
+  "project_sources": [
+    "cpp/core/host_api_init.cpp",
+    "cpp/core/logger.cpp",
+    "cpp/plugin.cpp"
+  ],
+  "sdk_sources": [
+    "public/tier0/memoverride.cpp",
+    "tier1/convar.cpp"
+  ],
+  "proto_files": [
+    "network_connection.proto"
+  ],
+  "proto_optional_files": [],
+  "additional_include_paths": [],
+  "defines": [],
+  "windows_exports": [
+    "CreateInterface"
+  ],
+  "linux_exports": [
+    "CreateInterface"
+  ],
+  "addon_copy_dirs": []
+}

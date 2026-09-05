@@ -1,0 +1,9 @@
+{
+    "C_Cpp.default.compileCommands": "${workspaceFolder}/compile_commands.json",
+    "C_Cpp.default.cppStandard": "c++20",
+    "C_Cpp.default.intelliSenseMode": "windows-msvc-x64",
+    "C_Cpp.default.compilerArgs": ["/Zc:__cplusplus"],
+    "C_Cpp.default.browse.limitSymbolsToIncludedHeaders": true,
+    "rust-analyzer.check.command": "clippy",
+    "rust-analyzer.cargo.buildScripts.enable": true
+}

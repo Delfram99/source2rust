@@ -1,0 +1,20 @@
+[package]
+name = "source2rust_abi"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+publish.workspace = true
+build = "build.rs"
+links = "source2rust_abi"
+
+[lib]
+doctest = false
+
+[build-dependencies]
+cbindgen.workspace = true
+
+[lints]
+workspace = true

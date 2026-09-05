@@ -1,0 +1,26 @@
+[package]
+name = "source2rust_core"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+publish.workspace = true
+build = "build.rs"
+links = "source2rust_core"
+
+[lib]
+crate-type = ["staticlib", "rlib"]
+doctest = false
+
+[dependencies]
+log.workspace = true
+source2rust_abi.workspace = true
+source2rust_runtime.workspace = true
+
+[build-dependencies]
+cbindgen.workspace = true
+
+[lints]
+workspace = true
