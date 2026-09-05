@@ -1,6 +1,6 @@
 # Source2Rust
 
-An experimental project for playing around with Rust in Source 2 games.
+An experimental [Metamod:Source](https://github.com/alliedmodders/metamod-source) plugin for playing around with Rust in Source 2 games.
 
 If you want to write full-fledged plugins in Rust, use [Plugify](https://plugify.net/languages/rust/first-plugin).
 
